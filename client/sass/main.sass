@@ -1,0 +1,214 @@
+@font-face
+  font-family: Quark-Bold
+  src: url('/fonts/Quark-LightBold/Quark-Bold.otf') format("truetype")
+@font-face
+  font-family: Quark-Light
+  src: url('/fonts/Quark-LightBold/Quark-Light.otf') format("truetype")
+
+html
+  font-family: Quark-Bold
+.row
+  margin-bottom: 0
+  .col
+    padding: 0
+
+// Navigator
+
+.navigator
+  background-color: #1B2E3C
+  height: 6rem
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+  position: relative
+  padding-left: 2rem
+  padding-right: 2rem
+  display: flex
+  justify-content: space-between
+  transition: height 0.8s
+  img
+    height: 6rem
+    cursor: pointer
+    transition: height 0.8s
+  .menu
+    width: 30%
+    display: flex
+    align-items: center
+    .list
+      width: 100%
+      display: flex
+      justify-content: flex-end
+      flex-flow: row
+      i
+        cursor: pointer
+        color: #fff
+        font-size: 65px
+        transition: font-size 0.8s
+.navigator-on-scroll
+  position: fixed
+  top: 0
+  width: 100%
+  background-color: #1B2E3C
+  height: 3.6rem
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+  z-index: 999
+  img
+    height: 3.6rem
+    cursor: pointer
+  .menu
+    width: 30%
+    display: flex
+    align-items: center
+    .list
+      width: 100%
+      display: flex
+      justify-content: flex-end
+      flex-flow: row
+      i
+        color: #fff
+        font-size: 40px
+
+// Side Navigator
+.side-navigator
+  display: flex
+  flex-flow: column
+  margin-top: 0
+  transition: margin-top 0.8s
+  div
+    padding: 1rem
+  img
+    width: 100%
+    cursor: pointer
+.side-navigator-scroll
+  margin-top: 3.5rem
+  position: fixed
+  img
+    width: 40%
+
+// Dashboard
+.dashboard-page
+  margin-top: 0
+  margin-bottom: 2rem
+  transition: margin-top 0.8s
+.dashboard-page-scroll
+  width: 100%
+  margin-top: 7rem
+  margin-left: 8.33333%
+.dash-board
+  padding-left: 3rem !important
+  padding-right: 2rem !important
+  h3
+    color: #5B6157
+  .graph
+    background: rgba(78,194,247,1);
+    background: -moz-linear-gradient(-45deg, rgba(78,194,247,1) 0%, rgba(78,194,247,1) 10%, rgba(53,185,246,1) 30%, rgba(3,168,244,1) 36%, rgba(53,185,246,1) 48%, rgba(28,176,245,1) 55%, rgba(0,150,135,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,194,247,1)), color-stop(10%, rgba(78,194,247,1)), color-stop(30%, rgba(53,185,246,1)), color-stop(36%, rgba(3,168,244,1)), color-stop(48%, rgba(53,185,246,1)), color-stop(55%, rgba(28,176,245,1)), color-stop(100%, rgba(0,150,135,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(78,194,247,1) 0%, rgba(78,194,247,1) 10%, rgba(53,185,246,1) 30%, rgba(3,168,244,1) 36%, rgba(53,185,246,1) 48%, rgba(28,176,245,1) 55%, rgba(0,150,135,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(78,194,247,1) 0%, rgba(78,194,247,1) 10%, rgba(53,185,246,1) 30%, rgba(3,168,244,1) 36%, rgba(53,185,246,1) 48%, rgba(28,176,245,1) 55%, rgba(0,150,135,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(78,194,247,1) 0%, rgba(78,194,247,1) 10%, rgba(53,185,246,1) 30%, rgba(3,168,244,1) 36%, rgba(53,185,246,1) 48%, rgba(28,176,245,1) 55%, rgba(0,150,135,1) 100%);
+    background: linear-gradient(135deg, rgba(78,194,247,1) 0%, rgba(78,194,247,1) 10%, rgba(53,185,246,1) 30%, rgba(3,168,244,1) 36%, rgba(53,185,246,1) 48%, rgba(28,176,245,1) 55%, rgba(0,150,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ec2f7', endColorstr='#009687', GradientType=1 )
+    margin-top: 1rem
+    margin-right: 1rem
+    padding: 1rem
+    border-radius: 0.4rem
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3),0 2px 10px 0 rgba(0,0,0,0.4)
+    h3
+      color: #fff
+    .ct-grid
+      stroke: rgba(255,255,255,0.3)
+    .ct-labels
+      span
+        color: #fff
+    .ct-chart-line
+  .option-value
+    border-right: 1px inset #7b8078
+    .switch
+      padding-top: 1rem
+      padding-left: 2rem
+      padding-right: 2rem
+      label
+        font-size: 20px
+        color: #fff
+    .option-value-column-one
+      display: flex
+      flex-flow: column
+    .option-value-column-two
+      display: flex
+      flex-flow: column
+  .result
+    display: flex
+    flex-flow: column
+    padding: 1rem
+    span
+      margin-left: 3.5rem
+      color: #fff
+      font-size: 20px
+.tools-dashboard
+  .tools-list
+    display: flex
+    flex-flow: column
+    padding-top: 1rem
+    .list-items
+      display: flex
+      flex-flow: row
+      align-items: center
+      padding: 1rem
+      border-bottom: 1px solid rgba(0,0,0,0.2)
+      cursor: pointer
+      img
+        height: 5em
+        margin-right: 0.3rem
+
+// Overview
+.overview-page
+  margin-top: 0
+  transition: margin-top 0.8s
+.overview-page-scroll
+  width: 100%
+  margin-top: 7rem
+  margin-left: 8.33333%
+.graph-card
+  padding: 0.5rem !important
+.overview
+  padding-left: 2rem !important
+  .row
+    padding-bottom: 2rem
+    padding-left: 1rem
+    padding-right: 1rem
+    border-bottom: 2px solid #f1f1f1
+  h3
+    color: #5B6157
+  .graph
+    height: 100%
+    background: rgba(78,194,247,1)
+    background: -moz-linear-gradient(-45deg, rgba(78,194,247,1) 0%, rgba(78,194,247,1) 10%, rgba(53,185,246,1) 30%, rgba(3,168,244,1) 36%, rgba(53,185,246,1) 48%, rgba(28,176,245,1) 55%, rgba(0,150,135,1) 100%)
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,194,247,1)), color-stop(10%, rgba(78,194,247,1)), color-stop(30%, rgba(53,185,246,1)), color-stop(36%, rgba(3,168,244,1)), color-stop(48%, rgba(53,185,246,1)), color-stop(55%, rgba(28,176,245,1)), color-stop(100%, rgba(0,150,135,1)))
+    background: -webkit-linear-gradient(-45deg, rgba(78,194,247,1) 0%, rgba(78,194,247,1) 10%, rgba(53,185,246,1) 30%, rgba(3,168,244,1) 36%, rgba(53,185,246,1) 48%, rgba(28,176,245,1) 55%, rgba(0,150,135,1) 100%)
+    background: -o-linear-gradient(-45deg, rgba(78,194,247,1) 0%, rgba(78,194,247,1) 10%, rgba(53,185,246,1) 30%, rgba(3,168,244,1) 36%, rgba(53,185,246,1) 48%, rgba(28,176,245,1) 55%, rgba(0,150,135,1) 100%)
+    background: -ms-linear-gradient(-45deg, rgba(78,194,247,1) 0%, rgba(78,194,247,1) 10%, rgba(53,185,246,1) 30%, rgba(3,168,244,1) 36%, rgba(53,185,246,1) 48%, rgba(28,176,245,1) 55%, rgba(0,150,135,1) 100%)
+    background: linear-gradient(135deg, rgba(78,194,247,1) 0%, rgba(78,194,247,1) 10%, rgba(53,185,246,1) 30%, rgba(3,168,244,1) 36%, rgba(53,185,246,1) 48%, rgba(28,176,245,1) 55%, rgba(0,150,135,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ec2f7', endColorstr='#009687', GradientType=1 )
+    margin-top: 1rem
+    padding-top: 1rem
+    border-radius: 0.4rem
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3),0 2px 10px 0 rgba(0,0,0,0.4)
+    svg
+      width: 93% !important
+      .ct-labels
+        margin-left: -0.4rem
+    h3
+      color: #fff
+    .ct-grid
+      stroke: rgba(255,255,255,0.3)
+    .ct-labels
+      span
+        color: #fff
+    .ct-chart-line
+  .graph-detail
+    float: right
+    span
+      color: #fff
+.pie-row
+  padding-top: 2rem
+  h5
+    text-align: center
+    color: #5A5F58
