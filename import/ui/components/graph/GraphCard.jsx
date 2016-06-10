@@ -9,7 +9,8 @@ export default class GraphCard extends React.Component {
       series: [
         [20, 9, 7, 8, 5],
         [2, 1, 3.5, 7, 3],
-        [1, 3, 4, 5, 6]
+        [1, 3, 4, 5, 6],
+        [1, 7, 9, 5, 15]
       ]
     }
 

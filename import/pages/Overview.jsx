@@ -8,7 +8,12 @@ import DonutCard from '../ui/components/graph/DonutCard.jsx';
 export default class Overview extends React.Component {
 
   componentDidMount() {
-
+    $(document).ready(function(){
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
   }
 
   renderChartPie() {
@@ -31,6 +36,7 @@ export default class Overview extends React.Component {
           </div>
           <div className="row pie-row">
             <DonutCard />
+            <PieCard />
           </div>
         </div>
       </div>

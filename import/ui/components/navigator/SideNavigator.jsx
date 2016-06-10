@@ -4,6 +4,7 @@ export default class SideNavigator extends React.Component {
 
   onCLickOverview() {
     FlowRouter.go('overview');
+    $('.overview-page').addClass('overview-page-scroll');
   }
 
   render() {

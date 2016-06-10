@@ -7,13 +7,23 @@ import RightSideNavigator from '../ui/components/dashboard/RightSideNavigator.js
 
 export default class Dashboard extends React.Component {
 
+  componentDidMount() {
+    $(document).ready(function(){
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  }
+
   renderChart() {
     var simpleLineChartData = {
       labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
       series: [
         [20, 9, 7, 8, 5],
         [2, 1, 3.5, 7, 3],
-        [1, 3, 4, 5, 6]
+        [1, 3, 4, 5, 6],
+        [0, 8, 11, 13, 15]
       ]
     }
 
@@ -26,15 +36,6 @@ export default class Dashboard extends React.Component {
     }
 
     return <ChartistGraph className={'ct-chart-donut ct-octave'} data={simpleLineChartData} type={'Pie'} />
-  }
-
-  renderChartDonut() {
-    var simpleLineChartData = {
-      series: [10, 20, 50, 20, 5, 50, 15],
-      labels: [1, 2, 3, 4, 5, 6, 7]
-    }
-
-    return <ChartistGraph className={'ct-octave'} data={simpleLineChartData} type={'Pie'} />
   }
 
   getItem() {
@@ -66,8 +67,11 @@ export default class Dashboard extends React.Component {
             <div className="col l9 option-value">
               <div className="col l6 option-value-column-one">
                 <OptionValue />
+                <OptionValue />
+                <OptionValue />
               </div>
               <div className="col l6 option-value-column-two">
+                <OptionValue />
                 <OptionValue />
               </div>
             </div>
