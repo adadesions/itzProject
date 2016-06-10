@@ -13,15 +13,17 @@ export default class Dashboard extends React.Component {
       }, 800);
       return false;
     });
+
+    $('.machine-menu').addClass('active');
   }
 
   getItem() {
     return [
-      { _id: 1, src: '/images/sidemenu/arm.png', name: 'Hudrauric arm 1'},
-      { _id: 2, src: '/images/sidemenu/arm.png', name: 'Hudrauric arm 2'},
-      { _id: 3, src: '/images/sidemenu/press.png', name: 'Hudrauric press 1'},
-      { _id: 4, src: '/images/sidemenu/press.png', name: 'Hudrauric press 2'},
-      { _id: 5, src: '/images/sidemenu/other.png', name: 'Other'}
+      { _id: 1, src: '/images/sidemenu/arm.png', name: 'Hudrauric arm 1', idIcon: 'arm'},
+      { _id: 2, src: '/images/sidemenu/arm.png', name: 'Hudrauric arm 2', idIcon: 'arm'},
+      { _id: 3, src: '/images/sidemenu/press.png', name: 'Hudrauric press 1', idIcon: 'press'},
+      { _id: 4, src: '/images/sidemenu/press.png', name: 'Hudrauric press 2', idIcon: 'press'},
+      { _id: 5, src: '/images/sidemenu/other.png', name: 'Other', idIcon: 'other'}
     ];
   }
 
@@ -39,7 +41,7 @@ export default class Dashboard extends React.Component {
           <GraphAdvance />
         </div>
         <div className="tools-dashboard l3">
-          <div className="tools-list">
+          <div className="tools-list z-depth-2">
             {this.renderItems()}
           </div>
         </div>

@@ -71,17 +71,61 @@ html
   display: flex
   flex-flow: column
   margin-top: 0
+  height: 100vh
   transition: margin-top 0.8s
-  div
+  background: #E4EBE3
+  .overview-menu
     padding: 1rem
+    transition: height 0.8s
+  .overview-menu.active
+    background-color: #0098CF
+    content: url('/images/sidemenu/overview-active.png')
+    width: 100%
+    height: 7.2rem
+  .machine-menu
+    padding: 1rem
+    transition: height 0.8s
+  .machine-menu.active
+    background-color: #0098CF
+    content: url('/images/sidemenu/machines-active.png')
+    width: 100%
+    height: 7.2rem
+  .setting-menu
+    padding: 1rem
+    transition: height 0.8s
+  .setting-menu.active
+    background-color: #0098CF
+    content: url('/images/sidemenu/setting-active.png')
+    width: 100%
+    height: 7.2rem
+  .overview-menu:hover
+    background-color: #0098CF
+    content: url('/images/sidemenu/overview-active.png')
+    width: 100%
+    height: 7.2rem
+    cursor: pointer
+  .machine-menu:hover
+    background-color: #0098CF
+    content: url('/images/sidemenu/machines-active.png')
+    width: 100%
+    height: 7.2rem
+    cursor: pointer
+  .setting-menu:hover
+    background-color: #0098CF
+    content: url('/images/sidemenu/setting-active.png')
+    width: 100%
+    height: 7.2rem
+    cursor: pointer
   img
     width: 100%
     cursor: pointer
 .side-navigator-scroll
   margin-top: 3.5rem
   position: fixed
+  width: 8.33333%
+  transition: margin-top 0.8s
   img
-    width: 40%
+    width: 100%
 
 // Dashboard
 .dashboard-page
@@ -140,6 +184,9 @@ html
     display: flex
     flex-flow: column
     padding-top: 1rem
+    height: 100vh
+    transition: margin-top 0.8s
+    background: #E4EBE3
     .list-items
       display: flex
       flex-flow: row
@@ -151,7 +198,32 @@ html
       img
         height: 5em
         margin-right: 0.3rem
-
+    .list-items:hover
+      background-color: #0098CF
+      width: 100%
+      height: 7.2rem
+      color: #fff
+    #arm.list-items:hover
+      background-color: #0098CF
+      width: 100%
+      height: 7.2rem
+      color: #fff
+      img
+        content: url('/images/sidemenu/arm-active.png')
+    #press.list-items:hover
+      background-color: #0098CF
+      width: 100%
+      height: 7.2rem
+      color: #fff
+      img
+        content: url('/images/sidemenu/arm-active.png')
+    #other.list-items:hover
+      background-color: #0098CF
+      width: 100%
+      height: 7.2rem
+      color: #fff
+      img
+        content: url('/images/sidemenu/arm-active.png')
 // Overview
 .overview-page
   margin-top: 0

@@ -14,6 +14,8 @@ export default class Overview extends React.Component {
       }, 800);
       return false;
     });
+
+    $('.overview-menu').addClass('active');
   }
 
   renderChartPie() {
