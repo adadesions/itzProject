@@ -35,7 +35,7 @@ export default class Dashboard extends React.Component {
     return(
       <div className="dashboard-page row">
         <div className="dash-board col l9">
-          <h3>Dashboard</h3>
+          <h3>Machine</h3>
           <GraphAdvance />
         </div>
         <div className="tools-dashboard l3">

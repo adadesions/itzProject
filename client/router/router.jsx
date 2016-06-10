@@ -14,19 +14,19 @@ const mainRouter = FlowRouter.group({
 });
 
 mainRouter.route('/', {
-  name: 'dashboard',
-  action() {
-    mount(Container, {
-      content: <Dashboard />,
-    });
-  },
-});
-
-mainRouter.route('/overview', {
   name: 'overview',
   action() {
     mount(Container, {
       content: <Overview />,
+    });
+  },
+});
+
+mainRouter.route('/machine', {
+  name: 'machine',
+  action() {
+    mount(Container, {
+      content: <Dashboard />,
     });
   },
 });

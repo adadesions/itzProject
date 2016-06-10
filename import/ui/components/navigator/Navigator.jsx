@@ -21,7 +21,7 @@ export default class Navigator extends React.Component {
   }
 
   onCLickMain() {
-    FlowRouter.go('dashboard');
+    FlowRouter.go('overview');
   }
 
   render() {
