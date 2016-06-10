@@ -20,8 +20,8 @@ export default class GraphCard extends React.Component {
   render() {
     return(
         <div className="graph-card col l4">
+          <h5>Hydraulic arm 1</h5>
           <div className="graph row">
-            <h3>Hydraulic arm 1</h3>
             <div className="col l12">
               {this.renderChart()}
             </div>
