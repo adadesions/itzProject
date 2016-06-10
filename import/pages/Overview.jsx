@@ -3,6 +3,7 @@ import React from 'react';
 // Components
 import GraphCard from '../ui/components/graph/GraphCard.jsx';
 import PieCard from '../ui/components/graph/PieCard.jsx';
+import DonutCard from '../ui/components/graph/DonutCard.jsx';
 
 export default class Overview extends React.Component {
 
@@ -29,8 +30,7 @@ export default class Overview extends React.Component {
             <GraphCard />
           </div>
           <div className="row pie-row">
-            <PieCard />
-            <PieCard />
+            <DonutCard />
           </div>
         </div>
       </div>

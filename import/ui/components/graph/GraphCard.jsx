@@ -25,7 +25,7 @@ export default class GraphCard extends React.Component {
               {this.renderChart()}
             </div>
             <div className="graph-detail">
-              <span>test</span>
+              <span>min: 0/max: 4</span>
             </div>
           </div>
         </div>

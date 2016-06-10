@@ -5,7 +5,7 @@ export default class PieCard extends React.Component {
 
   renderChartPie() {
     var simpleLineChartData = {
-      series: [20, 10, 30, 40]
+      series: [30, 20, 35, 15],
     }
 
     return <ChartistGraph className={'ct-octave'} data={simpleLineChartData} type={'Pie'} />
