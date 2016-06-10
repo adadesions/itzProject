@@ -8,6 +8,7 @@ export default class Navigator extends React.Component {
       $('.dashboard-page').addClass('dashboard-page-scroll');
       $('.side-navigator').addClass('side-navigator-scroll');
       $('.overview-page').addClass('overview-page-scroll');
+      $('.tools-list').addClass('tools-list-scroll');
     });
 
     $(document).scroll(function() {
@@ -16,6 +17,7 @@ export default class Navigator extends React.Component {
         $('.dashboard-page').removeClass('dashboard-page-scroll');
         $('.side-navigator').removeClass('side-navigator-scroll');
         $('.overview-page').removeClass('overview-page-scroll');
+        $('.tools-list').removeClass('tools-list-scroll');
       }
     });
   }
