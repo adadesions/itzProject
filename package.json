@@ -5,11 +5,13 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "highcharts": "^4.2.5",
     "meteor-node-stubs": "~0.2.0",
     "react": "^15.1.0",
     "react-addons-pure-render-mixin": "^15.1.0",
     "react-chartist": "^0.10.2",
     "react-dom": "^15.1.0",
+    "react-highcharts": "^8.3.2",
     "react-mounter": "^1.2.0"
   }
 }

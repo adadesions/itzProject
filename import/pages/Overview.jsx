@@ -34,8 +34,11 @@ export default class Overview extends React.Component {
             <GraphCard />
             <GraphCard />
           </div>
-          <div className="row pie-row">
+          <div className="row donut-row">
             <DonutCard />
+          </div>
+          <div className="row pie-row">
+            <PieCard />
             <PieCard />
           </div>
         </div>

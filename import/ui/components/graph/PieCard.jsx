@@ -13,7 +13,7 @@ export default class PieCard extends React.Component {
 
   render() {
     return(
-        <div className="col l4">
+        <div className="col l6">
           <div className="row">
             <div className="col l12">
               <h5>test</h5>
